@@ -11,7 +11,7 @@ export function DashBoard() {
   return (
     <div className="h-screen">
     <Navbar />
-    <div className="flex justify-start pl-20 pr-20 pt-10 ">
+    <div className="flex justify-start pl-20 pr-20 pt-10">
 
     <Routes>
         <Route path="/" element={<HomePage />} />

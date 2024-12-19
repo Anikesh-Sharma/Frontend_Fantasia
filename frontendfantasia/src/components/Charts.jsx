@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Line, Bar, Doughnut } from "react-chartjs-2";
+import { Line, Bar, Doughnut, Pie } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -66,6 +66,28 @@ const Charts = () => {
         },
       ],
     },
+    Fats: {
+      labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+      datasets: [
+        {
+          label: "Fat Intake (g)",
+          data: [50, 55, 53, 58],
+          backgroundColor: [
+            "rgba(255, 206, 86, 0.2)",
+            "rgba(255, 159, 64, 0.2)",
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(201, 203, 207, 0.2)",
+          ],
+          borderColor: [
+            "rgba(255, 206, 86, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(201, 203, 207, 1)",
+          ],
+          borderWidth: 2,
+        },
+      ],
+    },
   };
 
   const chartOptions = {
@@ -95,6 +117,7 @@ const Charts = () => {
           <option value="Protein">Protein</option>
           <option value="Weight">Weight</option>
           <option value="Carbs">Carbs</option>
+          <option value="Fats">Fats</option>
         </select>
       </div>
       <div className="flex justify-center">
@@ -106,6 +129,9 @@ const Charts = () => {
         )}
         {selectedOption === "Carbs" && (
           <Doughnut data={chartData.Carbs} options={chartOptions} />
+        )}
+        {selectedOption === "Fats" && (
+          <Pie data={chartData.Fats} options={chartOptions} />
         )}
       </div>
     </div>

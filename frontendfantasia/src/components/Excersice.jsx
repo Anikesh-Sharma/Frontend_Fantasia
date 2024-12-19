@@ -82,7 +82,7 @@ const Charts = () => {
   };
 
   return (
-    <div className="p-8 bg-gray-100 rounded-lg shadow-lg">
+    <div className="p-8 bg-gray-100 rounded-lg shadow-lg w-full">
       <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">
         Fitness Progress Charts
       </h2>
