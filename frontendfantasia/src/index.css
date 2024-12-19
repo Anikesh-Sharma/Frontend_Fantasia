@@ -6,7 +6,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 238, 163);
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar{
@@ -16,6 +16,6 @@ html, body {
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: orangered;
+    background-color: #2563ed;
     border-radius: 10px;
 }
