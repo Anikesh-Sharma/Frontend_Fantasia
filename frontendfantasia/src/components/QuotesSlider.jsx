@@ -13,8 +13,8 @@ const MotivationalQuotesSlider = () => {
   ];
 
   return (
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg mt-10 mx-6">
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-700 mb-6">
+    <div className="bg-blue-50 p-4 md:p-6 rounded-lg shadow-lg mt-10 mx-4 sm:mx-6 lg:mx-20">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-blue-700 mb-4 md:mb-6">
         Stay Motivated!
       </h2>
       <Swiper
@@ -22,11 +22,14 @@ const MotivationalQuotesSlider = () => {
         navigation
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="w-full max-w-3xl mx-auto"
+        className="w-full max-w-full sm:max-w-3xl mx-auto"
       >
         {quotes.map((quote, index) => (
-          <SwiperSlide key={index} className="flex justify-center items-center">
-            <p className="text-lg md:text-xl text-gray-700 text-center font-medium px-6">
+          <SwiperSlide
+            key={index}
+            className="flex justify-center items-center px-4 sm:px-6 lg:px-8"
+          >
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 text-center font-medium">
               {quote}
             </p>
           </SwiperSlide>

@@ -1,6 +1,4 @@
-import Charts from "./components/Charts"
 import { DashBoard } from "./components/DashBoard"
-
 
 function App() {
 
@@ -8,7 +6,6 @@ function App() {
   return (
     <>
       <DashBoard />
-      {/* <Charts /> */}
     </>
   )
 }
