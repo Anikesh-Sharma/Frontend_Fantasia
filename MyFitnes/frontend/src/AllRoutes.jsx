@@ -24,6 +24,7 @@ import LunchSearch from './pages/LunchSearch'
 import DinnerSearch from './pages/DinnerSearch'
 import SnackSearch from './pages/SnackSearch'
 import Exercise from './pages/Exercise/Exercise'
+import FitnessAIHelper from './components/FitnessAIHelper'
 
 
 
@@ -56,6 +57,7 @@ const AllRoutes = () => {
         <Route path='/myHome' element={<MyHome/>} />
         <Route path='/apps' element={<AppPage />} />
         <Route path='/exercise' element={<Exercise/>} />
+        <Route path='/fitnessAIHelper' element={<FitnessAIHelper />} />
 
 
 
